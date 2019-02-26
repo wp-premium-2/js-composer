@@ -180,9 +180,9 @@ class Vc_Shared_Templates {
 		) ) );
 
 		$templateId = vc_request_param( 'id' );
-		/* NULLED BY GANJAPARKER */
-		$status = true;
-		$file = dirname( __FILE__ ) . '/xml/' . $templateId . '.xml';
+		$requestUrl = $this->getTemplateDownloadLink( $templateId );
+		$status = false;
+		$file = $this->downloadTemplate( $requestUrl );
 		$data = array();
 		if ( $file ) {
 			new Vc_WXR_Parser_Plugin();
