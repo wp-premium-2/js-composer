@@ -28,4 +28,8 @@ $output .= wpb_widget_title( array(
 $output .= apply_filters( 'vc_layerslider_shortcode', do_shortcode( '[layerslider id="' . esc_attr( $id ) . '"]' ) );
 $output .= '</div>';
 
+<<<<<<< HEAD
 return $output;
+=======
+echo $output;
+>>>>>>> ver 6.1.0

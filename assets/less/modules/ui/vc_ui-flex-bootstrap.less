@@ -54,13 +54,21 @@
 .vc_float-media-grid-columns-rtl(@class) {
   // initial
   .vc_col-rtl(@index) when (@index = 1) {
+<<<<<<< HEAD
     @item: ~".rtl .vc_rtl-columns-reverse .vc_media-@{class} .vc_col-@{class}-@{index}";
+=======
+    @item: ~"[dir=rtl] .vc_rtl-columns-reverse .vc_media-@{class} .vc_col-@{class}-@{index}";
+>>>>>>> ver 6.1.0
     .vc_col-rtl((@index + 1), @item);
   }
 
   // general
   .vc_col-rtl(@index, @list) when (@index =< @grid-columns) {
+<<<<<<< HEAD
     @item: ~".rtl .vc_rtl-columns-reverse .vc_media-@{class} .vc_col-@{class}-@{index}";
+=======
+    @item: ~"[dir=rtl] .vc_rtl-columns-reverse .vc_media-@{class} .vc_col-@{class}-@{index}";
+>>>>>>> ver 6.1.0
     .vc_col-rtl((@index + 1), ~"@{list}, @{item}");
   }
 

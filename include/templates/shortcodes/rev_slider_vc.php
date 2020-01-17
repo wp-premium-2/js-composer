@@ -25,7 +25,14 @@ $output .= wpb_widget_title( array(
 	'title' => $title,
 	'extraclass' => 'wpb_revslider_heading',
 ) );
+<<<<<<< HEAD
 $output .= apply_filters( 'vc_revslider_shortcode', do_shortcode( '[rev_slider ' . $alias . ']' ) );
 $output .= '</div>';
 
 return $output;
+=======
+$output .= apply_filters( 'vc_revslider_shortcode', do_shortcode( '[rev_slider alias="' . $alias . '"]' ) );
+$output .= '</div>';
+
+echo $output;
+>>>>>>> ver 6.1.0

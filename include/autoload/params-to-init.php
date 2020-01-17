@@ -6,7 +6,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_filter( 'vc_edit_form_fields_optional_params', 'vc_edit_for_fields_add_optional_params' );
 
 if ( 'vc_edit_form' === vc_post_param( 'action' ) ) {
+<<<<<<< HEAD
 	add_filter( 'vc_edit_form_fields_after_render', 'vc_output_required_params_to_init' );
+=======
+	add_action( 'vc_edit_form_fields_after_render', 'vc_output_required_params_to_init' );
+>>>>>>> ver 6.1.0
 	add_filter( 'vc_edit_form_fields_optional_params', 'vc_edit_for_fields_add_optional_params' );
 }
 
@@ -48,7 +52,11 @@ function vc_edit_for_fields_add_optional_params( $params ) {
 	return $params;
 }
 
+<<<<<<< HEAD
 function vc_output_required_params_to_init( $output ) {
+=======
+function vc_output_required_params_to_init() {
+>>>>>>> ver 6.1.0
 	$params = WpbakeryShortcodeParams::getRequiredInitParams();
 
 	$js_array = array();
@@ -61,9 +69,15 @@ function vc_output_required_params_to_init( $output ) {
 		window.vc.required_params_to_init = [' . implode( ',', $js_array ) . '];
 	}';
 	$custom_tag = 'script';
+<<<<<<< HEAD
 	$output .= '<' . $custom_tag . '>' . $data . '</' . $custom_tag . '>';
 
 	return $output;
+=======
+	$output = '<' . $custom_tag . '>' . $data . '</' . $custom_tag . '>';
+
+	echo $output;
+>>>>>>> ver 6.1.0
 }
 
 add_action( 'wp_ajax_wpb_gallery_html', 'vc_gallery_html' );

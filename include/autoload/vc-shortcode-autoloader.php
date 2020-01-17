@@ -58,6 +58,11 @@ class VcShortcodeAutoloader {
 	 * @return string[] Included (if any) files
 	 */
 	public static function includeClass( $class ) {
+<<<<<<< HEAD
+=======
+		// call the constructor (php 7.4 compat)
+		self::getInstance();
+>>>>>>> ver 6.1.0
 		$class = strtolower( $class );
 		$files = array();
 

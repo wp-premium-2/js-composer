@@ -674,8 +674,12 @@ class Vc_Templates_Panel_Editor {
 		if ( $return ) {
 			return trim( $data['content'] );
 		} else {
+<<<<<<< HEAD
 			// @codingStandardsIgnoreLine
 			print esc_html( trim( $data['content'] ) );
+=======
+			print trim( $data['content'] );
+>>>>>>> ver 6.1.0
 			die;
 		}
 	}

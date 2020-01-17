@@ -161,6 +161,10 @@ class Vc_Manager {
 		require_once $this->path( 'PARAMS_DIR', 'params.php' );
 		require_once $this->path( 'AUTOLOAD_DIR', 'vc-shortcode-autoloader.php' );
 		require_once $this->path( 'SHORTCODES_DIR', 'core/class-vc-shortcodes-manager.php' );
+<<<<<<< HEAD
+=======
+		require_once $this->path( 'CORE_DIR', 'class-vc-modifications.php' );
+>>>>>>> ver 6.1.0
 		// Add hooks
 		add_action( 'plugins_loaded', array(
 			$this,
@@ -252,6 +256,10 @@ class Vc_Manager {
 		do_action( 'vc_after_mapping' ); // VC ACTION
 		// Load && Map shortcodes from Automapper.
 		vc_automapper()->map();
+<<<<<<< HEAD
+=======
+		new Vc_Modifications();
+>>>>>>> ver 6.1.0
 		if ( vc_user_access()->wpAny( 'manage_options' )->part( 'settings' )->can( 'vc-updater-tab' )->get() ) {
 			vc_license()->setupReminder();
 		}
