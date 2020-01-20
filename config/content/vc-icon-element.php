@@ -31,20 +31,12 @@ function vc_icon_element_params() {
 				'type' => 'iconpicker',
 				'heading' => esc_html__( 'Icon', 'js_composer' ),
 				'param_name' => 'icon_fontawesome',
-<<<<<<< HEAD
-				'value' => 'fa fa-adjust',
-=======
 				'value' => 'fas fa-adjust',
->>>>>>> ver 6.1.0
 				// default value to backend editor admin_label
 				'settings' => array(
 					'emptyIcon' => false,
 					// default true, display an "EMPTY" icon?
-<<<<<<< HEAD
-					'iconsPerPage' => 4000,
-=======
 					'iconsPerPage' => 500,
->>>>>>> ver 6.1.0
 					// default 100, how many icons per/page to display, we use (big number) to display all icons in single page
 				),
 				'dependency' => array(

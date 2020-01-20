@@ -32,8 +32,4 @@ if ( 'yes' === $featured_image ) {
 }
 $output = '<div class="' . esc_attr( $css_class ) . '"' . ( strlen( $style ) > 0 ? ' style="' . esc_attr( $style ) . '"' : '' ) . '>' . do_shortcode( $content ) . '</div>';
 
-<<<<<<< HEAD
-return $output;
-=======
 echo $output;
->>>>>>> ver 6.1.0

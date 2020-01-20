@@ -27,8 +27,4 @@ if ( ! vc_gitem_has_content( $content ) ) {
 }
 $output = '<div class="' . esc_attr( $css_class ) . '">' . do_shortcode( $content ) . '</div>';
 
-<<<<<<< HEAD
-return $output;
-=======
 echo $output;
->>>>>>> ver 6.1.0

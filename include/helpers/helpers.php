@@ -993,11 +993,6 @@ function vc_include_template( $template, $variables = array(), $once = false ) {
  */
 function vc_get_template( $template, $variables = array(), $once = false ) {
 	ob_start();
-<<<<<<< HEAD
-	vc_include_template( $template, $variables, $once );
-
-	return ob_get_clean();
-=======
 	$output = vc_include_template( $template, $variables, $once );
 
 	if ( 1 === $output ) {
@@ -1007,7 +1002,6 @@ function vc_get_template( $template, $variables = array(), $once = false ) {
 	ob_end_clean();
 
 	return $output;
->>>>>>> ver 6.1.0
 }
 
 /**
@@ -1067,11 +1061,7 @@ function vc_camel_case( $value ) {
 function vc_icon_element_fonts_enqueue( $font ) {
 	switch ( $font ) {
 		case 'fontawesome':
-<<<<<<< HEAD
-			wp_enqueue_style( 'font-awesome' );
-=======
 			wp_enqueue_style( 'vc_font_awesome_5' );
->>>>>>> ver 6.1.0
 			break;
 		case 'openiconic':
 			wp_enqueue_style( 'vc_openiconic' );
@@ -1200,12 +1190,6 @@ function vc_taxonomies_types( $post_type = null ) {
 	global $vc_taxonomies_types;
 	if ( is_null( $vc_taxonomies_types ) || $post_type ) {
 		$query = array( 'public' => true );
-<<<<<<< HEAD
-		if ( $post_type ) {
-			$query['object_type'] = array( $post_type );
-		}
-		$vc_taxonomies_types = get_taxonomies( $query, 'objects' );
-=======
 		$vc_taxonomies_types = get_taxonomies( $query, 'objects' );
 		if ( ! empty( $post_type ) && is_array( $vc_taxonomies_types ) ) {
 			foreach ( $vc_taxonomies_types as $key => $taxonomy ) {
@@ -1215,7 +1199,6 @@ function vc_taxonomies_types( $post_type = null ) {
 				}
 			}
 		}
->>>>>>> ver 6.1.0
 	}
 
 	return $vc_taxonomies_types;

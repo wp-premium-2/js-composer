@@ -93,11 +93,7 @@ function vc_attachment_filter_field( $form_fields, $post ) {
 function vc_media_editor_add_image() {
 	vc_user_access()->checkAdminNonce()->validateDie()->wpAny( 'upload_files' )->validateDie();
 
-<<<<<<< HEAD
-	require_once vc_path_dir( 'APP_ROOT', 'vendor/mmihey/php-instagram-effects/src/Image/Filter.php' );
-=======
 	require_once vc_path_dir( 'HELPERS_DIR', 'class-vc-image-filter.php' );
->>>>>>> ver 6.1.0
 	$response = array(
 		'success' => true,
 		'data' => array(
@@ -218,11 +214,7 @@ function vc_media_editor_add_image() {
 function vc_media_editor_preview_image() {
 	vc_user_access()->checkAdminNonce()->validateDie()->wpAny( 'upload_files' )->validateDie();
 
-<<<<<<< HEAD
-	require_once vc_path_dir( 'APP_ROOT', 'vendor/mmihey/php-instagram-effects/src/Image/Filter.php' );
-=======
 	require_once vc_path_dir( 'HELPERS_DIR', 'class-vc-image-filter.php' );
->>>>>>> ver 6.1.0
 
 	$response = array(
 		'success' => true,

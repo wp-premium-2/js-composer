@@ -40,11 +40,7 @@ return array(
 					'params' => array(
 						'message_box_color' => 'info',
 						'icon_type' => 'fontawesome',
-<<<<<<< HEAD
-						'icon_fontawesome' => 'fa fa-info-circle',
-=======
 						'icon_fontawesome' => 'fas fa-info-circle',
->>>>>>> ver 6.1.0
 					),
 				),
 				array(
@@ -53,11 +49,7 @@ return array(
 					'params' => array(
 						'message_box_color' => 'warning',
 						'icon_type' => 'fontawesome',
-<<<<<<< HEAD
-						'icon_fontawesome' => 'fa fa-exclamation-triangle',
-=======
 						'icon_fontawesome' => 'fas fa-exclamation-triangle',
->>>>>>> ver 6.1.0
 					),
 				),
 				array(
@@ -66,11 +58,7 @@ return array(
 					'params' => array(
 						'message_box_color' => 'success',
 						'icon_type' => 'fontawesome',
-<<<<<<< HEAD
-						'icon_fontawesome' => 'fa fa-check',
-=======
 						'icon_fontawesome' => 'fas fa-check',
->>>>>>> ver 6.1.0
 					),
 				),
 				array(
@@ -79,11 +67,7 @@ return array(
 					'params' => array(
 						'message_box_color' => 'danger',
 						'icon_type' => 'fontawesome',
-<<<<<<< HEAD
-						'icon_fontawesome' => 'fa fa-times',
-=======
 						'icon_fontawesome' => 'fas fa-times',
->>>>>>> ver 6.1.0
 					),
 				),
 				array(
@@ -162,11 +146,7 @@ return array(
 			'type' => 'dropdown',
 			'heading' => esc_html__( 'Icon library', 'js_composer' ),
 			'value' => array(
-<<<<<<< HEAD
-				esc_html__( 'Font Awesome', 'js_composer' ) => 'fontawesome',
-=======
 				esc_html__( 'Font Awesome 5', 'js_composer' ) => 'fontawesome',
->>>>>>> ver 6.1.0
 				esc_html__( 'Open Iconic', 'js_composer' ) => 'openiconic',
 				esc_html__( 'Typicons', 'js_composer' ) => 'typicons',
 				esc_html__( 'Entypo', 'js_composer' ) => 'entypo',
@@ -175,40 +155,24 @@ return array(
 				esc_html__( 'Mono Social', 'js_composer' ) => 'monosocial',
 			),
 			'param_name' => 'icon_type',
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
 			'heading' => esc_html__( 'Icon', 'js_composer' ),
 			'param_name' => 'icon_fontawesome',
-<<<<<<< HEAD
-			'value' => 'fa fa-info-circle',
-			'settings' => array(
-				'emptyIcon' => false,
-				// default true, display an "EMPTY" icon?
-				'iconsPerPage' => 4000,
-=======
 			'value' => 'fas fa-info-circle',
 			'settings' => array(
 				'emptyIcon' => false,
 				// default true, display an "EMPTY" icon?
 				'iconsPerPage' => 500,
->>>>>>> ver 6.1.0
 				// default 100, how many icons per/page to display
 			),
 			'dependency' => array(
 				'element' => 'icon_type',
 				'value' => 'fontawesome',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
@@ -225,11 +189,7 @@ return array(
 				'element' => 'icon_type',
 				'value' => 'openiconic',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
@@ -246,11 +206,7 @@ return array(
 				'element' => 'icon_type',
 				'value' => 'typicons',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
@@ -283,11 +239,7 @@ return array(
 				'element' => 'icon_type',
 				'value' => 'linecons',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
@@ -303,11 +255,7 @@ return array(
 				'element' => 'icon_type',
 				'value' => 'pixelicons',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'iconpicker',
@@ -326,11 +274,7 @@ return array(
 				'element' => 'icon_type',
 				'value' => 'monosocial',
 			),
-<<<<<<< HEAD
-			'description' => esc_html__( 'Select icon from library.', 'js_composer' ),
-=======
 			'description' => esc_html__( 'Choose icon from library.', 'js_composer' ),
->>>>>>> ver 6.1.0
 		),
 		array(
 			'type' => 'textarea_html',

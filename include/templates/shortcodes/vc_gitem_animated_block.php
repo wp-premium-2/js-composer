@@ -33,8 +33,4 @@ $output .= '<div class="' . esc_attr( $css_class ) . '" ' . $animation_attr . ( 
 $output .= do_shortcode( $content );
 $output .= '</div>';
 
-<<<<<<< HEAD
-return $output;
-=======
 echo $output;
->>>>>>> ver 6.1.0

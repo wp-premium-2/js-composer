@@ -552,12 +552,8 @@ class WPBMap {
 			$element = self::$sc[ $tag ];
 		}
 		if ( ! $element ) {
-<<<<<<< HEAD
-			throw new Exception( sprintf( esc_html__( 'Wrong name for shortcode:%s. Name required', 'js_composer' ), $tag ) );
-=======
 			// No element found
 			return false;
->>>>>>> ver 6.1.0
 		}
 
 		if ( isset( $element['__vc_settings_function'] ) || isset( $element['__vc_settings_file'] ) ) {
@@ -605,26 +601,14 @@ class WPBMap {
 			return false;
 		}
 		if ( ! isset( self::$sc[ $name ] ) ) {
-<<<<<<< HEAD
-			throw new Exception( sprintf( esc_html__( 'Wrong name for shortcode:%s. Name required', 'js_composer' ), $name ) );
-=======
 			// No shortcode found
 			return false;
->>>>>>> ver 6.1.0
 		} elseif ( ! isset( $attribute['param_name'] ) ) {
 			throw new Exception( sprintf( esc_html__( "Wrong attribute for '%s' shortcode. Attribute 'param_name' required", 'js_composer' ), $name ) );
 		} else {
 
 			$replaced = false;
 
-<<<<<<< HEAD
-			foreach ( self::$sc[ $name ]['params'] as $index => $param ) {
-				if ( $param['param_name'] === $attribute['param_name'] ) {
-					$replaced = true;
-					self::$sc[ $name ]['params'][ $index ] = $attribute;
-					break;
-				}
-=======
 			if ( is_array( self::$sc[ $name ]['params'] ) ) {
 				foreach ( self::$sc[ $name ]['params'] as $index => $param ) {
 					if ( $param['param_name'] === $attribute['param_name'] ) {
@@ -635,7 +619,6 @@ class WPBMap {
 				}
 			} else {
 				self::$sc[ $name ]['params'] = array();
->>>>>>> ver 6.1.0
 			}
 			if ( false === $replaced ) {
 				self::$sc[ $name ]['params'][] = $attribute;
@@ -678,12 +661,8 @@ class WPBMap {
 			return false;
 		}
 		if ( ! isset( self::$sc[ $name ] ) ) {
-<<<<<<< HEAD
-			throw new Exception( sprintf( esc_html__( 'Wrong name for shortcode:%s. Name required', 'js_composer' ), $name ) );
-=======
 			// No shortcode found
 			return false;
->>>>>>> ver 6.1.0
 		} elseif ( ! isset( $attribute['param_name'] ) ) {
 			throw new Exception( sprintf( esc_html__( "Wrong attribute for '%s' shortcode. Attribute 'param_name' required", 'js_composer' ), $name ) );
 		} else {
@@ -799,12 +778,8 @@ class WPBMap {
 			return false;
 		}
 		if ( ! isset( self::$sc[ $name ] ) ) {
-<<<<<<< HEAD
-			throw new Exception( sprintf( esc_html__( 'Wrong name for shortcode:%s. Name required', 'js_composer' ), $name ) );
-=======
 			// No shortcode found
 			return false;
->>>>>>> ver 6.1.0
 		} elseif ( 'base' === $setting_name ) {
 			throw new Exception( sprintf( esc_html__( "Wrong setting_name for shortcode:%s. Base can't be modified.", 'js_composer' ), $name ) );
 		}

@@ -65,8 +65,4 @@ if ( '' !== $link && 'bottom' === $position ) {
 }
 $output .= '</div>';
 
-<<<<<<< HEAD
-return $output;
-=======
 echo $output;
->>>>>>> ver 6.1.0

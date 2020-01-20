@@ -82,13 +82,6 @@ class Vc_Base {
 			$this,
 			'addMetaData',
 		) );
-<<<<<<< HEAD
-		add_action( 'wp_enqueue_scripts', array(
-			$this,
-			'addIEMinimalSupport',
-		) );
-=======
->>>>>>> ver 6.1.0
 		if ( is_admin() ) {
 			$this->initAdmin();
 		} else {
@@ -127,17 +120,10 @@ class Vc_Base {
 			'WPBMap',
 			'addAllMappedShortcodes',
 		) );
-<<<<<<< HEAD
-		add_action( 'wp_enqueue_scripts', array(
-			$this,
-			'addFrontCss',
-		) );
-=======
 		add_action( 'wp_head', array(
 			$this,
 			'addFrontCss',
 		), 1000 );
->>>>>>> ver 6.1.0
 		add_action( 'wp_head', array(
 			$this,
 			'addNoScript',
@@ -364,11 +350,7 @@ class Vc_Base {
 		}
 
 		if ( $id ) {
-<<<<<<< HEAD
-			if ( 'true' === vc_get_param( 'preview' ) ) {
-=======
 			if ( 'true' === vc_get_param( 'preview' ) && wp_revisions_enabled( get_post( $id ) ) ) {
->>>>>>> ver 6.1.0
 				$latest_revision = wp_get_post_revisions( $id );
 				if ( ! empty( $latest_revision ) ) {
 					$array_values = array_values( $latest_revision );
@@ -378,13 +360,9 @@ class Vc_Base {
 			$post_custom_css = get_metadata( 'post', $id, '_wpb_post_custom_css', true );
 			if ( ! empty( $post_custom_css ) ) {
 				$post_custom_css = wp_strip_all_tags( $post_custom_css );
-<<<<<<< HEAD
-				wp_add_inline_style( 'js_composer_front', $post_custom_css );
-=======
 				echo '<style type="text/css" data-type="vc_custom-css">';
 				echo $post_custom_css;
 				echo '</style>';
->>>>>>> ver 6.1.0
 			}
 		}
 	}
@@ -410,11 +388,7 @@ class Vc_Base {
 		}
 
 		if ( $id ) {
-<<<<<<< HEAD
-			if ( 'true' === vc_get_param( 'preview' ) ) {
-=======
 			if ( 'true' === vc_get_param( 'preview' ) && wp_revisions_enabled( get_post( $id ) ) ) {
->>>>>>> ver 6.1.0
 				$latest_revision = wp_get_post_revisions( $id );
 				if ( ! empty( $latest_revision ) ) {
 					$array_values = array_values( $latest_revision );
@@ -424,13 +398,9 @@ class Vc_Base {
 			$shortcodes_custom_css = get_metadata( 'post', $id, '_wpb_shortcodes_custom_css', true );
 			if ( ! empty( $shortcodes_custom_css ) ) {
 				$shortcodes_custom_css = wp_strip_all_tags( $shortcodes_custom_css );
-<<<<<<< HEAD
-				wp_add_inline_style( 'js_composer_front', $shortcodes_custom_css );
-=======
 				echo '<style type="text/css" data-type="vc_shortcodes-custom-css">';
 				echo $shortcodes_custom_css;
 				echo '</style>';
->>>>>>> ver 6.1.0
 			}
 		}
 	}
@@ -467,12 +437,8 @@ class Vc_Base {
 		wp_register_style( 'nivo-slider-theme', vc_asset_url( 'lib/bower/nivoslider/themes/default/default.min.css' ), array( 'nivo-slider-css' ), WPB_VC_VERSION );
 		wp_register_style( 'prettyphoto', vc_asset_url( 'lib/prettyphoto/css/prettyPhoto.min.css' ), array(), WPB_VC_VERSION );
 		wp_register_style( 'isotope-css', vc_asset_url( 'css/lib/isotope.min.css' ), array(), WPB_VC_VERSION );
-<<<<<<< HEAD
-		wp_register_style( 'font-awesome', vc_asset_url( 'lib/bower/font-awesome/css/font-awesome.min.css' ), array(), WPB_VC_VERSION );
-=======
 		wp_register_style( 'vc_font_awesome_5_shims', vc_asset_url( 'lib/bower/font-awesome/css/v4-shims.min.css' ), array(), WPB_VC_VERSION );
 		wp_register_style( 'vc_font_awesome_5', vc_asset_url( 'lib/bower/font-awesome/css/all.min.css' ), array( 'vc_font_awesome_5_shims' ), WPB_VC_VERSION );
->>>>>>> ver 6.1.0
 		wp_register_style( 'vc_animate-css', vc_asset_url( 'lib/bower/animate-css/animate.min.css' ), array(), WPB_VC_VERSION );
 
 		$front_css_file = vc_asset_url( 'css/js_composer.min.css' );
@@ -491,11 +457,6 @@ class Vc_Base {
 			wp_register_style( 'js_composer_custom_css', $custom_css_url, array(), WPB_VC_VERSION );
 		}
 
-<<<<<<< HEAD
-		wp_register_style( 'vc_lte_ie9', vc_asset_url( 'css/vc_lte_ie9.min.css' ), array(), WPB_VC_VERSION, 'screen' );
-
-=======
->>>>>>> ver 6.1.0
 		add_action( 'wp_enqueue_scripts', array(
 			$this,
 			'enqueueStyle',
@@ -631,19 +592,6 @@ class Vc_Base {
 	}
 
 	/**
-<<<<<<< HEAD
-	 * Also add fix for IE8 bootstrap styles from WPExplorer
-	 * @since  4.9
-	 * @access public
-	 */
-	public function addIEMinimalSupport() {
-		wp_enqueue_style( 'vc_lte_ie9' );
-		wp_style_add_data( 'vc_lte_ie9', 'conditional', 'lt IE 9' );
-	}
-
-	/**
-=======
->>>>>>> ver 6.1.0
 	 * Method adds css class to body tag.
 	 *
 	 * Hooked class method by body_class WP filter. Method adds custom css class to body tag of the page to help
